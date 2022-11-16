@@ -1,0 +1,731 @@
+@font-face {
+    font-family: instagramFont;
+    src: url(./Fontspring-DEMO-blue_vinyl_regular_ps_ot.otf);
+}
+
+@font-face {
+    font-family: instaUser;
+    src: url(./segoeuil.ttf);
+}
+
+@media (min-width: 1264px) {
+
+    .navv {
+        display: none;
+    }
+
+    /* list edit */
+
+    .list2 {
+        display: none;
+    }
+
+    .list {
+        width: 244px;
+        flex-direction: column;
+        box-sizing: border-box;
+        display: flex;
+        padding-top: 8px;
+        padding-right: 12px;
+        padding-left: 12px;
+        padding-bottom: 20px;
+        align-items: flex-start;
+        height: 100vh;
+        background-color: white;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+    }
+
+    .list button {
+        background-color: white;
+        border: 0ch;
+        text-align: start;
+        width: 200px;
+        height: 35px;
+        align-items: center;
+        font-size: 1.25rem;
+        margin-top: 30px;
+        margin-left: 5px;
+
+    }
+
+    .list .instagramFont {
+        font-family: instagramFont;
+        font-size: 1.6rem;
+        margin-top: 20px;
+        margin-left: 5px;
+    }
+
+    .instagramLogo {
+        display: none;
+    }
+
+    p {
+        font-family: instaUser;
+        font-size: 1.1rem;
+        font: 100;
+    }
+
+    button#homeIcon:hover {
+        background-color: whitesmoke;
+        border-radius: 20px;
+        transform: scale(1.01);
+    }
+
+    button#searchIcon:hover {
+        background-color: whitesmoke;
+        border-radius: 20px;
+        transform: scale(1.01);
+    }
+
+    button#exploreIcon:hover {
+        background-color: whitesmoke;
+        border-radius: 20px;
+        transform: scale(1.01);
+    }
+
+    button#messagesIcon:hover {
+        background-color: whitesmoke;
+        border-radius: 20px;
+        transform: scale(1.01);
+    }
+
+    button#notificationIcon:hover {
+        background-color: whitesmoke;
+        border-radius: 20px;
+        transform: scale(1.01);
+    }
+
+    button#createIcon:hover {
+        background-color: whitesmoke;
+        border-radius: 20px;
+        transform: scale(1.01);
+    }
+
+    button#profileIcon:hover {
+        background-color: whitesmoke;
+        border-radius: 20px;
+        transform: scale(1.01);
+    }
+
+    button#moreIcon:hover {
+        background-color: whitesmoke;
+        border-radius: 20px;
+        transform: scale(1.01);
+    }
+
+    .profile {
+        width: calc(100% - 244px);
+    }
+}
+
+@media (min-width: 767px) and (max-width: 1264px) {
+
+    .navv {
+        display: none;
+    }
+
+    .list2 {
+        display: none;
+    }
+
+    .list {
+        width: 72px;
+        flex-direction: column;
+        box-sizing: border-box;
+        display: flex;
+        padding-top: 8px;
+        padding-right: 12px;
+        padding-left: 12px;
+        padding-bottom: 20px;
+        align-items: flex-start;
+        height: 100vh;
+    }
+
+    .list button p {
+        display: none;
+    }
+
+    .list .instagramFont {
+        display: none;
+    }
+
+    .list .instagramLogo {
+        font-size: 1.75rem;
+    }
+
+    .list button {
+        background-color: white;
+        border: 0ch;
+        text-align: start;
+        width: fit-content;
+        height: 35px;
+        align-items: center;
+        font-size: 1.25rem;
+        margin-top: 30px;
+        margin-left: 5px;
+    }
+
+    .list .instagramLogo:hover {
+        background-color: whitesmoke;
+        border-radius: 20px;
+        transform: scale(1.1);
+    }
+
+    button#homeIcon:hover {
+        background-color: whitesmoke;
+        border-radius: 20px;
+        transform: scale(1.1);
+    }
+
+    button#searchIcon:hover {
+        background-color: whitesmoke;
+        border-radius: 20px;
+        transform: scale(1.1);
+    }
+
+    button#exploreIcon:hover {
+        background-color: whitesmoke;
+        border-radius: 20px;
+        transform: scale(1.1);
+    }
+
+    button#messagesIcon:hover {
+        background-color: whitesmoke;
+        border-radius: 20px;
+        transform: scale(1.1);
+    }
+
+    button#notificationIcon:hover {
+        background-color: whitesmoke;
+        border-radius: 20px;
+        transform: scale(1.1);
+    }
+
+    button#createIcon:hover {
+        background-color: whitesmoke;
+        border-radius: 20px;
+        transform: scale(1.1);
+    }
+
+    button#profileIcon:hover {
+        background-color: whitesmoke;
+        border-radius: 20px;
+        transform: scale(1.1);
+    }
+
+    button#moreIcon:hover {
+        background-color: whitesmoke;
+        border-radius: 20px;
+        transform: scale(1.1);
+    }
+
+    .profile {
+        width: calc(100% - 72px);
+    }
+
+    .pro {
+        margin-left: -70px;
+    }
+
+    .Hilight {
+        margin-left: -50px;
+    }
+}
+
+@media (max-width: 767px) {
+    .navv {
+        background-color: white;
+        width: 100%;
+        height: 40px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        display: flex;
+        justify-content: space-between;
+        position: fixed;
+        top: 0;
+    }
+
+    .navv .settingBtn {
+        width: fit-content;
+        border: 0ch;
+        background-color: white;
+        font-size: 1.50rem;
+    }
+
+    .navv button {
+        border: 0ch;
+        background-color: white;
+        display: flex;
+        align-items: center;
+    }
+
+    .list {
+        display: none;
+    }
+
+    .list2 {
+        background-color: white;
+        width: 100%;
+        height: 40px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        display: flex;
+        justify-content: space-evenly;
+        position: fixed;
+        bottom: 0;
+    }
+
+    .list2 button {
+        background-color: white;
+        border: 0ch;
+        text-align: start;
+        width: fit-content;
+        height: 35px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        font-size: 1.25rem;
+    }
+
+    .list2 p {
+        display: none;
+    }
+
+    .profile {
+        max-height: calc(100% - 40px);
+        width: 100%;
+    }
+
+    .pro {
+        margin-left: -60px;
+        margin-top: 30px;
+    }
+
+    .Hilight {
+        margin-left: -50px;
+    }
+
+    .account {
+        margin-top: 50px;
+        margin-left: -40px;
+    }
+}
+
+body {
+    height: 200vh;
+    display: flex;
+}
+
+p {
+    font-family: instaUser;
+    font-size: 1.1rem;
+    font: 100;
+}
+
+.img1 {
+    width: 25px;
+    height: 26px;
+    border-radius: 500px 500px;
+    border: 2px solid black;
+}
+
+@media (min-width: 736px) {
+
+    .profile2 {
+        display: none;
+    }
+
+    .aaa {
+        padding: 30px 20px 0;
+        box-sizing: content-box;
+    }
+
+    .pro {
+
+        display: flex;
+    }
+
+    .imgPro {
+        margin-top: 92px;
+        margin-left: 95px;
+        width: 150px;
+        height: 150px;
+        border-radius: 500px 500px;
+    }
+
+    .account {
+        display: grid;
+        padding-left: 100px;
+    }
+
+    .user {
+        background-color: whitesmoke;
+        display: flex;
+        width: fit-content;
+        height: 40px;
+        padding-top: 5px;
+    }
+
+    .username {
+        width: fit-content;
+        height: fit-content;
+        font-family: instaUser;
+    }
+
+    .editPro {
+        width: fit-content;
+        margin-left: 20px;
+        background-color: whitesmoke;
+        border: 0.5px solid darkgray;
+        border-radius: 5px;
+    }
+
+    .settingBtn {
+        width: fit-content;
+        border: 0ch;
+        background-color: whitesmoke;
+        margin-left: 10px;
+        font-size: 1.50rem;
+    }
+
+    .info {
+        width: fit-content;
+        height: fit-content;
+        display: flex;
+        margin-top: 15px;
+    }
+
+    .postNum {
+        width: fit-content;
+        font-family: instaUser;
+        margin-top: 7px;
+    }
+
+    .followersNum {
+        width: fit-content;
+        margin-left: 40px;
+        border: 0ch;
+        background-color: whitesmoke;
+    }
+
+    .followingNum {
+        border: 0ch;
+        width: fit-content;
+        margin-left: 35px;
+        background-color: whitesmoke;
+
+    }
+
+    .bio {
+        width: fit-content;
+        height: fit-content;
+        margin-top: 20px;
+    }
+
+    .Hilight {
+        height: 210px;
+        /* background-color: whitesmoke; */
+    }
+
+    .imgBtnPlus {
+        border: 0ch;
+        height: 80px;
+        width: 80px;
+        border: 1px solid darkgrey;
+        border-radius: 500px;
+    }
+
+    .plusBtn {
+        border: 0ch;
+        padding-top: 50px;
+        margin-left: 80px;
+        background-color: whitesmoke;
+    }
+
+    .post {
+        border-top: 1px solid rgb(197, 195, 195);
+        background-color: whitesmoke;
+        width: auto;
+        height: 53px;
+        display: flex;
+        justify-content: center;
+        margin-right: 0;
+    }
+
+    .post button {
+        border: 0ch;
+        font-family: Arial, sans-serif;
+        color: darkgray;
+        width: fit-content;
+        background-color: whitesmoke;
+    }
+
+    .post .button h6 {
+        font-size: 0.75rem;
+        margin-top: 20px;
+    }
+
+    .post .button .postButton:focus {
+        border-top: 0.1rem solid black;
+        font-style: initial;
+        color: black;
+    }
+
+    .post .button .savedButton:focus {
+        border-top: 0.1rem solid black;
+        color: black;
+    }
+
+    .post .button .taggedButton:focus {
+        border-top: 0.1rem solid black;
+        color: black;
+    }
+}
+
+
+@media (max-width: 736px) {
+    body {
+        background-color: whitesmoke;
+    }
+
+    body {
+        display: block;
+    }
+
+    .profile {
+        display: none;
+    }
+
+    .navv {
+        background-color: white;
+        width: 100%;
+        height: 40px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        display: flex;
+        justify-content: space-between;
+        position: fixed;
+        top: 0;
+    }
+
+    .navv .settingBtn {
+        width: fit-content;
+        border: 0ch;
+        background-color: white;
+        font-size: 1.50rem;
+    }
+
+    .navv button {
+        border: 0ch;
+        background-color: white;
+        display: flex;
+        align-items: center;
+    }
+
+    .aaa {
+        padding: 30px 20px 0;
+        box-sizing: content-box;
+    }
+
+    .pro {
+        background-color: whitesmoke;
+        display: flex;
+        margin-left: 0px;
+        margin-top: 0;
+    }
+
+    .imgPro {
+        margin-top: 30px;
+        width: 77px;
+        height: 77px;
+        border-radius: 50px 50px;
+    }
+
+    .account {
+        background-color: whitesmoke;
+        display: grid;
+        padding-left: 35px;
+    }
+
+    .user {
+        background-color: whitesmoke;
+        display: flex;
+        width: auto;
+        height: 40px;
+        margin-left: 30px;
+        padding-top: 35px;
+    }
+
+    .username {
+        width: fit-content;
+        height: fit-content;
+        font-family: instaUser;
+    }
+
+    .editPro {
+        width: 245px;
+        background-color: whitesmoke;
+        border: 0.5px solid darkgray;
+        margin-top: 40px;
+        margin-left: 30px;
+        border-radius: 5px;
+    }
+
+    .user .settingBtn {
+        width: fit-content;
+        border: 0ch;
+        background-color: whitesmoke;
+        margin-bottom: 100px;
+        margin-left: 10px;
+        font-size: 1.50rem;
+    }
+
+
+    .bio {
+        width: fit-content;
+        height: fit-content;
+        margin-top: 30px;
+    }
+
+    .Hilight {
+        height: 210px;
+        background-color: whitesmoke;
+        margin-left: 0;
+    }
+
+    .imgBtnPlus {
+        border: 0ch;
+        height: 64px;
+        width: 64px;
+        border: 1px solid darkgrey;
+        border-radius: 500px;
+    }
+
+    .plusBtn {
+        border: 0ch;
+        padding-top: 20px;
+        margin-left: -15px;
+        background-color: whitesmoke;
+    }
+
+    .info {
+        border-top: 1px solid rgb(197, 195, 195);
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: -50px;
+    }
+
+
+    .postNum p {
+        font-family: instaUser;
+    }
+
+    .followersNum p {
+        font-family: instaUser;
+    }
+
+    .followingNum p {
+        font-family: instaUser;
+    }
+
+    .postNum {
+        text-align: center;
+        width: 33.3333333%;
+        margin-top: 5px;
+    }
+
+    .followersNum {
+        width: 33.3333333%;
+        border: 0ch;
+        background-color: whitesmoke;
+    }
+
+    .followingNum {
+        border: 0ch;
+        width: 33.3333333%;
+        background-color: whitesmoke;
+    }
+
+    .post {
+        border-top: 1px solid rgb(197, 195, 195);
+        display: flex;
+        justify-content: center;
+    }
+
+    .post button.postButton {
+        width: 33.33333333%;
+    }
+
+    .post button.savedButton {
+        width: 33.33333333%;
+    }
+
+    .post button.taggedButton {
+        width: 33.33333333%;
+        color: darkgray;
+    }
+
+    .post button {
+        border: 0ch;
+        font-family: Arial, sans-serif;
+        color: darkgray;
+        background-color: whitesmoke;
+    }
+
+    .post button h6 {
+        font-size: 1.5rem;
+        margin-top: 10px;
+    }
+
+    .post .postButton:focus {
+        border-top: 0.1rem solid black;
+        font-style: initial;
+        color: rgb(0, 140, 255);
+    }
+
+    .post .savedButton:focus {
+        border-top: 0.1rem solid black;
+        color: rgb(0, 140, 255);
+    }
+
+    .post .taggedButton:focus {
+        border-top: 0.1rem solid black;
+        color: rgb(0, 140, 255);
+    }
+}
+
+.mainProfile {
+    background-color: whitesmoke;
+    display: flex;
+}
+
+.aaa {
+    flex-grow: 1;
+    margin: 0 auto 30px;
+    max-width: 935px;
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.profile {
+    margin-left: auto;
+    background-color: whitesmoke;
+}
+
+.dot {
+    color: white;
+}
+
+a {
+    overflow: hidden;
+    color: rgb(0, 55, 107);
+    text-overflow: ellipsis;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+}
