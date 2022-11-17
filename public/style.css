@@ -45,15 +45,14 @@
         height: 35px;
         align-items: center;
         font-size: 1.25rem;
-        margin-top: 30px;
-        margin-left: 5px;
+    }
 
+    .list button#homeIcon {
+        margin-top: 50px;
     }
 
     .list .instagramFont {
-        font-family: instagramFont;
-        font-size: 1.6rem;
-        margin-top: 20px;
+        margin-top: 30px;
         margin-left: 5px;
     }
 
@@ -61,10 +60,43 @@
         display: none;
     }
 
+    .homeLogo img {
+        display: flex;
+        align-items: center;
+    }
+
+    .searchLogo img {
+        display: flex;
+        align-items: center;
+    }
+
+    .exploreLogo img {
+        display: flex;
+        align-items: center;
+    }
+
+    .messagesLogo img {
+        margin-bottom: 10px;
+    }
+
+    .notificationsLogo img {
+        margin-bottom: 10px;
+    }
+
+    .moreLogo img {
+        margin-bottom: 10px;
+    }
+
     p {
         font-family: instaUser;
+        display: flex;
+        align-items: center;
         font-size: 1.1rem;
-        font: 100;
+        margin-left: 15px;
+        font: 100%;
+    }
+    .bio p {
+        margin-left: 0;
     }
 
     button#homeIcon:hover {
@@ -115,8 +147,40 @@
         transform: scale(1.01);
     }
 
+    button#searchIcon {
+        margin-top: 25px;
+    }
+
+    button#exploreIcon {
+        margin-top: 25px;
+    }
+
+    button#messagesIcon {
+        margin-top: 25px;
+    }
+
+    button#notificationIcon {
+        margin-top: 25px;
+    }
+
+    button#createIcon {
+        margin-top: 25px;
+    }
+
+    button#profileIcon {
+        margin-top: 25px;
+    }
+
     .profile {
         width: calc(100% - 244px);
+    }
+
+    .imgPro {
+        margin-top: 82px;
+        margin-left: 70px;
+        width: 150px;
+        height: 150px;
+        border-radius: 500px 500px;
     }
 }
 
@@ -141,6 +205,10 @@
         padding-bottom: 20px;
         align-items: flex-start;
         height: 100vh;
+        background-color: white;
+        position: fixed;
+        left: 0;
+        bottom: 0;
     }
 
     .list button p {
@@ -151,9 +219,7 @@
         display: none;
     }
 
-    .list .instagramLogo {
-        font-size: 1.75rem;
-    }
+
 
     .list button {
         background-color: white;
@@ -164,7 +230,6 @@
         align-items: center;
         font-size: 1.25rem;
         margin-top: 30px;
-        margin-left: 5px;
     }
 
     .list .instagramLogo:hover {
@@ -225,11 +290,19 @@
         width: calc(100% - 72px);
     }
 
-    .pro {
-        margin-left: -70px;
+    .Hilight {
+        margin-left: -50px;
     }
 
-    .Hilight {
+    .imgPro {
+        margin-top: 85px;
+        margin-left: 35px;
+        width: 150px;
+        height: 150px;
+        border-radius: 500px 500px;
+    }
+
+    .account {
         margin-left: -50px;
     }
 }
@@ -291,10 +364,6 @@
         font-size: 1.25rem;
     }
 
-    .list2 p {
-        display: none;
-    }
-
     .profile {
         max-height: calc(100% - 40px);
         width: 100%;
@@ -302,12 +371,13 @@
 
     .pro {
         margin-left: -60px;
-        margin-top: 30px;
+        margin-top: 10px;
     }
 
     .Hilight {
         margin-left: -50px;
     }
+
 
     .account {
         margin-top: 50px;
@@ -316,7 +386,7 @@
 }
 
 body {
-    height: 200vh;
+    height: 500vh;
     display: flex;
 }
 
@@ -333,6 +403,16 @@ p {
     border: 2px solid black;
 }
 
+@media (min-width: 737px) and (max-width: 766px) {
+    .imgPro {
+        margin-top: 97px;
+        margin-left: 95px;
+        width: 150px;
+        height: 150px;
+        border-radius: 500px 500px;
+    }
+}
+
 @media (min-width: 736px) {
 
     .profile2 {
@@ -345,16 +425,7 @@ p {
     }
 
     .pro {
-
         display: flex;
-    }
-
-    .imgPro {
-        margin-top: 92px;
-        margin-left: 95px;
-        width: 150px;
-        height: 150px;
-        border-radius: 500px 500px;
     }
 
     .account {
@@ -384,12 +455,16 @@ p {
         border-radius: 5px;
     }
 
-    .settingBtn {
+    .user .settingBtn {
         width: fit-content;
         border: 0ch;
         background-color: whitesmoke;
         margin-left: 10px;
         font-size: 1.50rem;
+    }
+
+    .user .settingBtn img {
+        margin-bottom: 20px;
     }
 
     .info {
@@ -428,7 +503,6 @@ p {
 
     .Hilight {
         height: 210px;
-        /* background-color: whitesmoke; */
     }
 
     .imgBtnPlus {
@@ -483,6 +557,29 @@ p {
     .post .button .taggedButton:focus {
         border-top: 0.1rem solid black;
         color: black;
+    }
+
+    .aaa .possts {
+        display: grid;
+        justify-items: center;
+        margin-top: 50px;
+        font-family: instaUser;
+        text-align: center;
+    }
+
+    .aaa .possts img {
+        width: 80px;
+    }
+
+    .aaa .possts button {
+        border: none;
+        background-color: whitesmoke;
+    }
+
+    .aaa .possts button h6 {
+        margin-top: 20px;
+        font-weight: bolder;
+        color: rgb(0, 123, 255);
     }
 }
 
@@ -656,6 +753,10 @@ p {
         display: flex;
         justify-content: center;
     }
+    .post .button h6 {
+        font-size: 0.75rem;
+        margin-top: 20px;
+    }
 
     .post button.postButton {
         width: 33.33333333%;
@@ -667,7 +768,6 @@ p {
 
     .post button.taggedButton {
         width: 33.33333333%;
-        color: darkgray;
     }
 
     .post button {
@@ -682,20 +782,50 @@ p {
         margin-top: 10px;
     }
 
-    .post .postButton:focus {
+    .post button.postButton img:hover {
+        filter: invert(44%) sepia(58%) saturate(3032%) hue-rotate(202deg) brightness(102%) contrast(92%);
+    }
+    .post button.savedButton img:hover {
+        filter: invert(44%) sepia(58%) saturate(3032%) hue-rotate(202deg) brightness(102%) contrast(92%);
+    }
+    .post button.taggedButton img:hover {
+        filter: invert(44%) sepia(58%) saturate(3032%) hue-rotate(202deg) brightness(102%) contrast(92%);
+    }
+    .post button.taggedButton:focus{
         border-top: 0.1rem solid black;
-        font-style: initial;
-        color: rgb(0, 140, 255);
+        color: black;
+    }
+    .post button.postButton:focus{
+        border-top: 0.1rem solid black;
+        color: black;
+    }
+    .post button.savedButton:focus{
+        border-top: 0.1rem solid black;
+        color: black;
+    }
+    
+    .aaa .possts {
+        display: grid;
+        justify-items: center;
+        margin-top: 40px;
+        font-family: instaUser;
+        text-align: center;
     }
 
-    .post .savedButton:focus {
-        border-top: 0.1rem solid black;
-        color: rgb(0, 140, 255);
+    .aaa .possts img {
+        width: 90px;
     }
 
-    .post .taggedButton:focus {
-        border-top: 0.1rem solid black;
-        color: rgb(0, 140, 255);
+    .aaa .possts button {
+        border: none;
+        background-color: whitesmoke;
+    }
+
+    .aaa .possts button h6 {
+        margin-top: px;
+        font-weight: bolder;
+        color: rgb(0, 123, 255);
+        margin-top: 10px;
     }
 }
 
@@ -728,4 +858,10 @@ a {
     font-weight: 600;
     font-size: 14px;
     line-height: 18px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+
 }
